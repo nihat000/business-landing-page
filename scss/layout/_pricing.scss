@@ -1,74 +1,123 @@
-
-
-.pricing{
+.pricing {
 	background-color: #252B42;
-	.pricing-container{
+
+	.pricing-container {
 		max-width: 1200px;
-		padding: 3rem 0;
+		padding: 3em 0;
 		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		color : #fff;
+		color: #fff;
 	}
-	&-title{
-		margin-bottom: 1.5rem;
+
+	&-title {
+		margin-bottom: 1.5em;
 	}
+
 	&-info {
-		width: 600px;
+		max-width: 600px;
 		margin: auto;
 		text-align: center;
+		margin-bottom: 3rem;
 	}
-	&-box{
-		width: 1000px;
+
+	&-box {
+		max-width: 1000px;
 		display: flex;
-		gap:  40px;
-		margin-top: 2rem;
-		&-el{
+		gap: 40px;
+		margin-top: 2em;
+
+		&-el {
 			background-color: #fff;
 			border-radius: 5px;
 			border: 1px solid #dedede;
 			border-radius: 5px;
-			display: flex; flex-direction: column;
+			display: flex;
+			flex-direction: column;
 			align-items: center;
 			color: #000;
-			padding: 1.5rem 2rem;
-			&-title{
-				margin-top: 2rem;
+			padding: 1.5em 2em;
+
+			&-title {
+				margin-top: 2em;
 				text-align: center;
 			}
-			&-info{
-				margin-top: .2rem;
+
+			&-info {
+				margin-top: .2em;
 				text-align: center;
 			}
-			&-price{
+
+			&-price {
 				display: flex;
-				margin-top: 1rem;
-			}
-			&-feature{
-				margin-top: 3rem;
-				p{
-					margin-top: 1rem;
+				align-items: center;
+				margin-top: 1em;
+
+				&-title {
+					font-size: 6rem;
+					line-height: 7rem;
+					margin-right: .5rem;
 				}
 			}
-			&-btn{
-				margin-top: 2rem;
-				padding : 2rem 3.5rem;
+
+			&-feature {
+				margin-top: 2em;
+
+				p {
+					margin-top: 1em;
+				}
+			}
+
+			&-btn {
+				margin-top: 2em;
+				padding: 2em 3.5em;
 				border-radius: 10px;
 				@include btn-try();
 			}
-			&:nth-child(2){
+
+			&:nth-child(2) {
 				transform: translateY(-25px);
 				background-color: $primary-color;
 			}
+
 			&:nth-child(2) button {
-				@include btn-try-reverse ;
-				
-				
-				
+				@include btn-try-reverse;
+
+
+
 			}
 
 		}
-		
+
+	}
+}
+
+@media screen and (max-width:768px) {
+	.pricing {
+		font-size: 1.5rem;
+	}
+
+	.pricing {
+		&-box {
+			margin: auto;
+			margin-top: 2em;
+			width: 76%;
+			flex-direction: column;
+
+			&-el {
+				&-title {
+					font-weight: 900;
+
+				}
+
+				&-info {}
+
+				&-price {
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
 	}
 }

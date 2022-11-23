@@ -1,42 +1,81 @@
-
-.subscribe{
+.subscribe {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1200px;
+	padding: 5rem 0;
 	margin: auto;
 	margin-top: 4rem;
-	.subscribe-main{
+
+	.subscribe-main {
 		margin-right: 4rem;
 		width: 50%;
-		img {width: 100%;}
+
+		img {
+			width: 100%;
+		}
 	}
-	.subscribe-sub{
-		h3{
+
+	.subscribe-sub {
+		h3 {
 			font-size: 90%;
 		}
-		&-newsletter{
+
+		&-newsletter {
 			margin-top: 1.5rem;
 		}
-		&-available{
+
+		&-available {
 			margin-top: .2rem;
 		}
-		&-box{
+
+		&-box {
 			margin-top: 2rem;
-			input{
-				padding: 1rem 3rem ;
+
+			input {
+				padding: 1rem 3rem;
 				border: none;
 				background-color: #E8E8E8;
 				border-radius: 25px;
 				outline: none;
 			}
+
 			button {
+				margin-top: 1.25rem;
 				padding: 1rem 3rem;
 				border-radius: 25px;
-				color : #fff;
+				color: #fff;
 				background-color: $primary-color;
 				border: none;
 				cursor: pointer;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:768px) {
+	.subscribe {
+		flex-direction: column;
+		align-items: center;
+
+		&-main {
+			width: 100%;
+		}
+
+		&-sub {
+			margin-top: 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			h2 {
+				text-align: center;
+			}
+
+			&-box {
+				margin-top: 2rem;
+				display: flex;
+				flex-direction: column;
 			}
 		}
 	}

@@ -1,50 +1,110 @@
-
 .start {
-  width: 100%;
-    height: 890px;
-    background-image: url("../img/bg1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    nav {
-      .nav-container {
-        max-width: 1200px;
-        height: 156px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .nav-links {
-          .nav-link {
-            color: #fff;
-            font-size: 15px;
-            margin-right: 41px;
-          }
-        }
-        .nav-social {
-                   img {margin-right: 2rem;}
-        }
-      }
-    }
-    .start-main {
-          
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: #ffff;
-          h1{
-              margin-bottom: 2rem;
-          }
-          h4{
-              margin-bottom: 4rem;
-              letter-spacing: .2px;
-              font-weight: 400;
-          }
-      &-btn {
-              @include btn-try();
-      }
-    }
-  }
+	width: 100%;
+	height: 890px;
+	background-image: url("../img/bg1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	nav {
+		height: 150px;
+
+		.nav-container {
+			max-width: 1200px;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.nav-main {
+				display: flex;
+				align-items: center;
+
+				ul {
+					display: flex;
+
+					& li {
+						margin-right: 2rem;
+
+						& a {
+							color: #fff;
+							text-decoration: none;
+						}
+					}
+				}
+
+				& a img {
+					width: 180px;
+				}
+			}
+
+			& .nav-sub {
+				& img {
+					margin-right: 1rem;
+				}
+
+				& img:nth-child(4) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.start-main {
+
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: #ffff;
+
+		h1 {
+			margin-bottom: 2rem;
+		}
+
+		h4 {
+			margin-bottom: 4rem;
+			letter-spacing: .2px;
+			font-weight: 400;
+		}
+
+		&-btn {
+			@include btn-try();
+		}
+	}
+}
+
+
+
+@media screen and (max-width:768px) {
+	.start {
+		height: 700px;
+
+		nav {
+			height: 100px !important;
+			padding: 0 2rem;
+
+			.nav-main {
+				ul {
+					display: none !important;
+				}
+
+			}
+
+			.nav-sub {
+
+				& img:nth-child(1),
+				& img:nth-child(2),
+				& img:nth-child(3) {
+					display: none;
+				}
+
+				& img:nth-child(4) {
+					display: block !important;
+				}
+			}
+		}
+	}
+}
