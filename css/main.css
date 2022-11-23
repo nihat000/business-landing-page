@@ -73,6 +73,7 @@ h4 {
 }
 .start nav .nav-container .nav-main ul {
   display: flex;
+  list-style: none;
 }
 .start nav .nav-container .nav-main ul li {
   margin-right: 2rem;
