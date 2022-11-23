@@ -1,0 +1,48 @@
+
+.start {
+    height: 890px;
+    background-image: url("../img/bg1.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    nav {
+      .nav-container {
+        max-width: 1200px;
+        height: 156px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav-links {
+          .nav-link {
+            color: #fff;
+            font-size: 15px;
+            margin-right: 41px;
+          }
+        }
+        .nav-social {
+                   img {margin-right: 2rem;}
+        }
+      }
+    }
+    .start-main {
+          
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ffff;
+          h1{
+              margin-bottom: 2rem;
+          }
+          h4{
+              margin-bottom: 4rem;
+              letter-spacing: .2px;
+              font-weight: 400;
+          }
+      &-btn {
+              @include btn-try();
+      }
+    }
+  }

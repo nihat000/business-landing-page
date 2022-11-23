@@ -1,0 +1,42 @@
+
+.subscribe{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 4rem;
+	.subscribe-main{
+		margin-right: 4rem;
+		img {width: 650px;}
+	}
+	.subscribe-sub{
+		h3{
+			font-size: 90%;
+		}
+		&-newsletter{
+			margin-top: 1.5rem;
+		}
+		&-available{
+			margin-top: .2rem;
+		}
+		&-box{
+			margin-top: 2rem;
+			input{
+				padding: 1rem 3rem ;
+				border: none;
+				background-color: #E8E8E8;
+				border-radius: 25px;
+				outline: none;
+			}
+			button {
+				padding: 1rem 3rem;
+				border-radius: 25px;
+				color : #fff;
+				background-color: $primary-color;
+				border: none;
+				cursor: pointer;
+			}
+		}
+	}
+}

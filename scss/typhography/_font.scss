@@ -1,0 +1,48 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+html {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Martel", serif;
+}
+h1 {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 74/16rem;
+  line-height: 84/16rem;
+}
+h2{
+	font-size: 3rem;
+	line-height: 55px;
+	font-weight: 400;
+}
+h3{
+	font-size: 20/16rem;
+	font-size: 28/16rem;
+	font-weight: 700;
+}
+h4 {
+	font-size: 28/16rem;
+  line-height: 40/16rem;
+	font-weight: 400;
+}
+
+@media  (max-width:768px){
+  html{
+    font-size: 10px;
+  }
+}
+
+

@@ -1,0 +1,44 @@
+.footer{
+    padding: 4rem 0;
+    background-color: #252B42;
+    color : #fff;
+    &-container{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-links{
+        display: flex;
+        &-box{
+            display: flex;
+            flex-direction: column;
+            margin-right: 4rem;
+            a{
+                margin-top: 1.5rem;
+                color : #fff;
+                text-decoration: none;
+            }
+           
+        }
+    }
+    &-info {
+        &-number, &-location  {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            img{
+                width: 40px;
+                margin-right: 10px;
+
+            }
+
+        }
+        &-social{
+            margin-top: 1rem;
+            img{
+                margin-right: 2rem;
+            }
+        }
+    }
+}

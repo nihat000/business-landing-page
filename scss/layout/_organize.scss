@@ -1,0 +1,31 @@
+
+
+.organize{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.organize-main{
+		&-caption{
+
+		}
+		&-info{
+			margin-top: 1.5rem;
+		}
+		margin-right: 6rem;
+		&-btn{
+			margin-top: 1.5rem;
+			@include btn-try();
+		}
+	}
+	.organize-sub {
+		&-screen {
+			width: 400px;
+			height: 400px;
+		}
+		&-base{
+			width: 400px;
+		}
+	}
+}
